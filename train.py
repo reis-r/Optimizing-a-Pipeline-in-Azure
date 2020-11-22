@@ -19,7 +19,9 @@ data_url = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample
 
 ds = TabularDatasetFactory.from_delimited_files(path=data_url)
 
-# ds = ds.to_pandas_dataframe()
+# create an output folder for the model files
+if "outputs" not in os.listdir():
+    os.mkdir("./outputs")
 
 def clean_data(data):
     # Dict for cleaning data
