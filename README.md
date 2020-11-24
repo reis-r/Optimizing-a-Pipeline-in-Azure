@@ -104,7 +104,7 @@ The JSON obtained from the run interface fully explains the model and it's weigh
 The *AutoML* model presented best results, but the model using hyperparameter tuning was not a bad choice. The big advantage of using *AutoML* instead of *HyperDrive* was that *AutoML* is faster to get started with, and already presents the result in a zip file with the conda environment and models ready to deploy. That said, parameter tuning is faster to train, and a lot more flexible in what you can be tuned.
 
 ## Future work
-In the *AutoML* model trained, neural networks were not considered, and could present better results. Neural networks take more time to train, and are more expensive. Since we are experimenting for educational purposes only, it was not considered necessary to use Deep Learning. Future work to improve the pipeline could consider these more advanced algorithms that could present better results, the steps would be:
+In the *AutoML* model training, neural networks were not considered, and could present better results. Neural networks take more time to train, and are more expensive. Since we are experimenting for educational purposes only, it was not considered necessary to use Deep Learning. Future work to improve the pipeline could consider these more advanced algorithms that could present better results, the steps would be:
 
 * To enable complex models like deep learning at the AutoML configuration.
 * To use a deep learning framework (such as Keras) instead of SKLearn on train.py
